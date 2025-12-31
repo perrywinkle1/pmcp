@@ -1,0 +1,44 @@
+{
+  "name": "pmcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Private MCP Network - Token-gated marketplace for FHE-encrypted MCP servers",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean",
+    "deploy:testnet": "ts-node scripts/deploy.ts --network base-sepolia",
+    "deploy:mainnet": "ts-node scripts/deploy.ts --network base"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "author": "PMCP Network",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perrywinkle1/pmcp"
+  },
+  "keywords": [
+    "mcp",
+    "fhe",
+    "privacy",
+    "blockchain",
+    "ai",
+    "agents",
+    "web3"
+  ]
+}
